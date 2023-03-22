@@ -5,7 +5,7 @@
 }
 
 .main {
-    background-color: burlywood;
+    background-color:beige;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -13,22 +13,31 @@
 }
 
 .container {
-    background-color: #fff;
+    background-color:white;
     border-radius: 5px;
     width: 400px;
     height: 600px;
     padding: 15px;
+
 }
 
 h2 {
     text-transform: uppercase;
+    font-size: 40px;
     letter-spacing: 2.5px;
     margin-bottom: 15px;
+    display: flex;
+    justify-content:center ;
+    
+    
 }
 
 .input-group {
     display: flex;
     margin-bottom: 15px;
+    background-color: white;
+    align-items: center;
+    
     
     
 
@@ -40,19 +49,30 @@ h2 {
     font-size: 25px;
     font-weight: bold;
     letter-spacing: 2px;
+    background-color:azure;
+    height: 50px;
 }
 
 #add-button {
     padding: 7px 9px;
     border: none;
+    transition-property: all;
+    transition-duration: 0.2s;
+    border-width: 2px;
+    border-color: black;
     
 
     
-    background-color: rgb(1, 4, 4);
+    background-color: rgb(252, 255, 255);
+}
+#add-button:hover{
+    opacity: 0.5;
 }
 
 .todos-container {
     overflow-y: scroll;
+    background-color: aliceblue;
+    
 }
 
 .todo-item-container {
@@ -62,14 +82,17 @@ h2 {
 
 #todo-text {
     width: 100%;
-    font-size: 20px;
+    font-size: 30px;
     letter-spacing: 1.5px;
     user-select: none;
+    display: flex;
+    align-items: center;
+    
 }
 
 .line-through {
-    text-decoration: line-through;
-    color: blue;
+    text-decoration: double line-through;
+    color: rgb(11, 11, 13);
 }
 
 #edit-button,
@@ -77,4 +100,12 @@ h2 {
     padding: 5px;
     border: none;
     background-color: transparent;
+    transition-property: all;
+    transition-duration: 0.2s;
+    background-color: aliceblue;
+}
+
+
+#delete-button:hover{
+    opacity: 0.5s;
 }
